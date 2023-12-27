@@ -3,35 +3,31 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - weather
+  - thanks
+  - order_pizza
+  - order_food
+  - inform_food
+
+entities:
+  - food
 
 responses:
-  utter_weather:
-  - text: "The weather is always good for a cyclist!"
-
   utter_greet:
   - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://cdn.evolve-mma.com/wp-content/uploads/2016/02/ecp-cycling-1024x625.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_goodbye:
   - text: "Bye"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_thanks:
+  - text: "You're welcome, happy to assist"
+
+  utter_order_pizza:
+  - text: "Sure, I what kinda pizza you want?"
+
+actions:
+  - action_extract_food_entity
+  - action_order_food
+  - action_confirm_order
 
 session_config:
   session_expiration_time: 60
