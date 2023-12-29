@@ -7,3 +7,7 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: tell the time
+  steps:
+  - intent: inquire_time
+  - action: action_tell_time

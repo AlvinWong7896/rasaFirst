@@ -48,3 +48,20 @@ nlu:
     - [sushi](food)
     - [salad](food)
     - [pasta](food)
+
+- intent: inquire_time
+  examples: |
+    - what time is it?
+    - what time is it in [Amsterdam](place)?
+    - what time is it in [London](place)?
+    - tell me the time in [Lisbon](place)?
+    - what is current time in [Berlin](place)
+
+- lookup: place
+  examples: |
+    - brussels
+    - zagreb
+    - london
+    - lisbon
+    - amsterdam
+    - seattle

@@ -7,9 +7,12 @@ intents:
   - order_pizza
   - order_food
   - inform_food
+  - inquire_time
 
 entities:
   - food
+  - place
+
 
 responses:
   utter_greet:
@@ -28,6 +31,7 @@ actions:
   - action_extract_food_entity
   - action_order_food
   - action_confirm_order
+  - action_tell_time
 
 session_config:
   session_expiration_time: 60
