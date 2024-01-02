@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -10,8 +9,6 @@ nlu:
     - good morning
     - good evening
     - good afternoon
-
-
 - intent: goodbye
   examples: |
     - cu
@@ -19,14 +16,12 @@ nlu:
     - cee you later
     - good night
     - bye
-
 - intent: thanks
   examples: |
     - thanks
     - thank you
     - appreciate it
     - many thanks
-
 - intent: order_pizza
   examples: |
     - I want to order a [pizza](food)
@@ -34,13 +29,11 @@ nlu:
     - i'd like to have a [pizza](food)
     - let's order a [pizza](food)
     - how about a [pizza](food)
-
 - intent: order_food
   examples: |
     - i want to order a food
     - can i get some food
     - let order some food
-
 - intent: inform_food
   examples: |
     - [steak](food)
@@ -48,7 +41,6 @@ nlu:
     - [sushi](food)
     - [salad](food)
     - [pasta](food)
-
 - intent: inquire_time
   examples: |
     - what time is it?
@@ -56,7 +48,9 @@ nlu:
     - what time is it in [London](place)?
     - tell me the time in [Lisbon](place)?
     - what is current time in [Berlin](place)
-
+    - great, what is the time now?
+    - what time is it now in paris
+    - [amsterdam](place)
 - lookup: place
   examples: |
     - brussels

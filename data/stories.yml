@@ -18,3 +18,17 @@ stories:
   - action: action_order_food
   - intent: inform_food
   - action: action_confirm_order
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_time
+  - action: action_tell_time
+  - intent: inquire_time
+  - action: action_tell_time
+  - intent: inquire_time
+    entities:
+    - place: amsterdam
+  - action: action_tell_time
+  - intent: inform_food
